@@ -1,0 +1,51 @@
+/* Estilos gerais da aplicação */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 50px;
+}
+
+/* Estilos da área de input */
+.input-area {
+  width: 100%;
+  max-width: 70%;
+  position: relative;
+  margin-top: 30px;
+}
+
+#user-input {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 16px;
+  border: 2px solid #00a8e8;
+  border-radius: 30px;
+  outline: none;
+  color: #333;
+}
+
+#user-input::placeholder {
+  color: #ccc;
+  text-align: center;
+}
