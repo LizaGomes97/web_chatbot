@@ -68,7 +68,7 @@ const gameResponses = [
 setTimeout(() => {
   fadeToAction("Wave", 0.3);
   updateSpeechBubble(
-    "Olá gamer! Sou seu assistente robótico. Qual seu nome ou nickname?",
+    "Olá Furioso! Sou seu assistente virtual. Qual seu nome ou nickname?",
     true,
     "happy"
   );
