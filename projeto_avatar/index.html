@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Avatar Azul</title>
+    <title>Chatbot Gamer</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/avatar.css" />
     <link rel="stylesheet" href="css/animations.css" />
@@ -11,9 +11,9 @@
   <body>
     <div class="container">
       <div class="avatar-section">
-        <div class="avatar" id="avatar"></div>
+        <div id="avatar-container"></div>
         <div class="speech-bubble" id="speech-bubble">
-          Olá, me chamo Azul, e você?
+          Olá, me chamo Robo, e você?
         </div>
       </div>
 
@@ -29,8 +29,18 @@
       </div>
     </div>
 
-    <script src="js/main.js"></script>
-    <script src="js/avatar.js"></script>
-    <script src="js/interactions.js"></script>
+    <!-- Importações Three.js -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <script src="js/main.js" type="module"></script>
+    <script src="js/avatar.js" type="module"></script>
+    <script src="js/interactions.js" type="module"></script>
   </body>
 </html>
